@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 
 				try {
 					guidanceService.resetGuidance();
-					label.setText("Reset guidance: "+guidanceService.markB(true));
+					label.setText("Reset guidance: "+guidanceService.markB(true)+", "+guidanceService.getResults());
 				} catch (RemoteException e) {
 					e.printStackTrace();
 				}
